@@ -8,10 +8,15 @@
     <!-- tailwind and daisyUI cdn -->
      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- font family -->
+    <!-- font family poppins -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!-- font hind siliguri -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- font awesome cdn -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,6 +27,10 @@
         font-weight: 400;
         font-style: normal;
         }
+
+        .font-hind-siliguri{
+            font-family: "Hind Siliguri", sans-serif;
+        }
         </style>
 </head>
 <body class="font-poppins container mx-auto">
@@ -29,9 +38,9 @@
     <header class="">
         <nav class="navbar bg-[#9fbfde96] shadow-sm">
   <div class="flex-1">
-    <span class="btn btn-ghost text-xl">English
+    <span class="flex items-center text-xl font-bold">English
         <img src="./assets/logo.png" alt="">
-        জানালা
+        <span class="font-hind-siliguri">জানালা</span>
     </span>
 
   </div>
@@ -44,7 +53,28 @@
     </header>
 
     <main>
-        
+        <!-- hero section started -->
+         <section class="w-11/12 mx-auto pt-8 lg:flex justify-between items-center space-y-6 lg:space-y-0">
+    <div class="lg:w-1/2">
+        <h2 class="text-5xl font-bold"><span class="text-[#00BCFF]">English</span> is Easy!!</h2>
+      <p class="py-6 font-medium lg:w-10/12 text-[#18181B] font-hind-siliguri">
+        আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ
+      </p>
+    <!-- form -->
+    <div class="max-w-sm">
+        <fieldset class="fieldset space-y-5">
+          <input type="text" class="input" placeholder="Enter Your name" />
+          <input type="password" class="input font-bold" placeholder="............" />
+          <button class="btn btn-primary w-[150px]">Get Started</button>
+        </fieldset>
+      </div>
+    </div>
+   
+    <div class="lg:w-1/2">
+       <img class="mx-auto" src="./assets/hero-student.png" alt="">
+    </div>
+  </div>
+         </section>
     </main>
 
     <!-- footer -->
