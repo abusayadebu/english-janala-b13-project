@@ -6,8 +6,7 @@ const noLessonSection = document.getElementById("noLessonSection")
 
 // click levelbutton function
 function clickLevelBtn(id, btn){
-     // hide the noLessonSection 
-    noLessonSection.classList.add("hidden")
+
     // show word section
     wordsSection.classList.remove("hidden")
 
@@ -50,6 +49,16 @@ async function loadWordsByLevels (id){
     const res = await fetch(`https://openapi.programming-hero.com/api/level/${id}`)
     const data = await res.json()
     displayWordsByLevels(data.data);
+
+     if(wordsSection.children.length == 0){
+        // show the noLessonSection 
+    noLessonSection.classList.remove("hidden")
+    wordsSection.classList.add("hidden")
+     }
+     else{
+        // hide the noLessonSection 
+    noLessonSection.classList.add("hidden")
+     }
 }
 
 // displayWordsByLevels
